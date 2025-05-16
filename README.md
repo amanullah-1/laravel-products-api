@@ -39,7 +39,7 @@ This is a RESTful API for managing products, built with Laravel. The API provide
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/laravel-products-api.git
+   git clone https://github.com/amanullah-1/laravel-products-api.git
    cd laravel-products-api
    ```
 
