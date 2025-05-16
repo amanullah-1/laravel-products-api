@@ -95,6 +95,38 @@
 			"response": []
 		},
 		{
+			"name": "Product Import from json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Product\",\n    \"description\": \"This is a newly created product\",\n    \"price\": 49.99,\n    \"thumbnail\": \"https://example.com/new-product.jpg\"\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/api/products",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				},
+				"description": "Create a new product"
+			},
+			"response": []
+		},
+		{
 			"name": "Get Single Product",
 			"request": {
 				"method": "GET",
