@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductImportController;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
@@ -22,3 +23,5 @@ Route::get('/api/products/{product}/edit', ProductController::class .'@edit');
 Route::put('/api/products/{product}', ProductController::class .'@update');
 // deletes a product
 Route::delete('/api/products/{product}', ProductController::class .'@destroy');
+
+Route::post('/api/products/import', ProductImportController::class .'@import');
