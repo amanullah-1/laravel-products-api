@@ -20,6 +20,10 @@ This is a RESTful API for managing products, built with Laravel. The API provide
 | PUT    | /api/products/{id}| Update a product                     |
 | DELETE | /api/products/{id}| Delete a product                     |
 
+| POST | /api/products/import| Import product from dummy json endpoitn          |
+
+
+
 ### Query Parameters
 
 - `search`: Filter products by title (GET /api/products)
